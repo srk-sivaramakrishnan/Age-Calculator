@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+:root {
+ --bgclr: #FBF6E2;
+ --cntclr: #131842;
+ --textclr: #E68369;
+ --textclrs: #ECCEAE;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: var(--bgclr);
+}
+
+.heading {
+  font-size: 55px;
+  color: var(--textclr);
+  position: relative;
+  margin: 20px;
+}
+
+.calculator {
+  color: var(--cntclr);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.content {
+  background: var(--cntclr);
+  width: 750px;
+  padding: 50px;
+  border-radius: 20px;
+  border-bottom-right-radius: 40%;
+  position: relative;
+}
+
+.input {
+  display: flex;
+  margin-bottom: 35px;
+}
+
+input {
+  font-size: 32px;
+  width: 150px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-right: 20px;
+  border-radius: 10px;
+  color: var(--textclr);
+  border: 0.5px solid var(--textclr);
+  outline: none;
+  letter-spacing: 2px;
+  caret-color: var(--textclr);
+}
+
+h6 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--textclrs);
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: var(--textclr);
+}
+
+button {
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  background: var(--textclr);
+  right: 50px;
+  margin-top: -32px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: orange;
+}
+
+input:focus {
+  border: 0.5px solid var(--textclr);
+}
+
+p.error {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--textclr);
+  font-style: italic;
+  margin: 5px 0;
+}
+
+.result h1 {
+  font-size: 60px;
+  font-style: italic;
+  color: var(--textclrs);
+}
+
+.result span {
+  color: var(--textclr);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--textclr);
+}
+
+@media only screen and (max-width: 375px) {
+  .input {
+    margin-bottom: 40px;
+  }
+  input {
+    font-size: 18px;
+    width: 80px;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  .content {
+    background: var(--White);
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    border-bottom-right-radius: 30%;
+    position: relative;
+  }
+  .result h1 {
+    font-size: 45px;
+    font-style: italic;
+  }
+  p.error {
+    font-size: 10px;
+  }
+  button {
+    right: 40%;
+  }
+  .result {
+    margin-top: 40px;
+  }
+}
+
